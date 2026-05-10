@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MNS — Data Analytics & Frontend Design</title>
+  <link rel="stylesheet" href="port.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ░░ NAVBAR ░░ -->
+  <header class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="logo" aria-label="MNS Home">
+        <span class="logo-mark">MNS</span>
+      </a>
+      <nav class="nav-links" role="navigation" aria-label="Primary">
+        <a href="#about"   class="nav-link">About</a>
+        <a href="#skills"  class="nav-link">Skills</a>
+        <a href="#work"    class="nav-link">Work</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <!-- Mobile drawer -->
+    <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+      <a href="#about"   class="m-link">About</a>
+      <a href="#skills"  class="m-link">Skills</a>
+      <a href="#work"    class="m-link">Work</a>
+      <a href="#contact" class="m-link">Contact</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ░░ HERO ░░ -->
+    <section class="hero" id="hero">
+      <div class="hero-bg-grid" aria-hidden="true"></div>
+      <div class="hero-orb hero-orb--1" aria-hidden="true"></div>
+      <div class="hero-orb hero-orb--2" aria-hidden="true"></div>
+
+      <div class="hero-content">
+        
+
+        <h1 class="hero-title">
+          <span class="reveal-up" style="--delay:.1s">Turning Raw Data</span>
+          <span class="reveal-up gradient-text" style="--delay:.22s">Into Clarity.</span>
+        </h1>
+
+        <p class="hero-subtitle reveal-up" style="--delay:.35s">
+          <span id="typewriter"></span><span class="cursor" aria-hidden="true">|</span>
+        </p>
+
+        <p class="hero-bio reveal-up" style="--delay:.5s">
+          Data Analyst &amp; Frontend Developer crafting intelligent dashboards,
+          interactive visualizations, and performant web experiences — where
+          insight meets design.
+        </p>
+
+        <div class="hero-cta reveal-up" style="--delay:.65s">
+          <a href="#work" class="btn btn--primary">
+            <span>View My Work</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <a href="#contact" class="btn btn--ghost">Get in Touch</a>
+        </div>
+      </div>
+
+      <div class="hero-scroll-hint reveal-up" style="--delay:.9s" aria-hidden="true">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ░░ ABOUT ░░ -->
+    <section class="about section-pad" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-avatar-col">
+            <div class="avatar-frame js-reveal">
+              <div class="avatar-inner">
+                <span class="avatar-initials">MNS</span>
+              </div>
+              <div class="avatar-ring" aria-hidden="true"></div>
+              <div class="avatar-tag">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                  <circle cx="7" cy="7" r="3" fill="#22d3ee"/>
+                  <circle cx="7" cy="7" r="6" stroke="#22d3ee" stroke-opacity=".3" stroke-width="1"/>
+                </svg>
+                Open to Roles
+              </div>
+            </div>
+          </div>
+
+          <div class="about-text-col">
+            <p class="section-eyebrow js-reveal">About</p>
+            <h2 class="section-title js-reveal">
+              Analyst by <em>logic</em>,<br>designer by <em>instinct</em>.
+            </h2>
+            <p class="body-text js-reveal">
+              I'm <strong>MNS</strong> — a data-focused professional who bridges
+              the gap between complex datasets and elegant user interfaces. With a
+              background spanning SQL warehousing, BI dashboards, Python scripting,
+              and modern frontend engineering, I translate numbers into narratives
+              that decision-makers actually understand.
+            </p>
+            <p class="body-text js-reveal">
+              I believe the best analysis is useless if it can't be communicated.
+              That conviction drives every project — from a pharma risk model to
+              a Brazilian e-commerce pipeline.
+            </p>
+            <div class="stat-row js-reveal">
+              <div class="stat">
+                <span class="stat-num">4+</span>
+                <span class="stat-label">Years Experience</span>
+              </div>
+              <div class="stat">
+                <span class="stat-num">20+</span>
+                <span class="stat-label">Projects Shipped</span>
+              </div>
+              <div class="stat">
+                <span class="stat-num">3</span>
+                <span class="stat-label">Industries Served</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ░░ SKILLS ░░ -->
+    <section class="skills section-pad" id="skills">
+      <div class="container">
+        <p class="section-eyebrow center js-reveal">Expertise</p>
+        <h2 class="section-title center js-reveal">The Tools I Wield</h2>
+
+        <div class="skills-grid">
+
+          <div class="skill-card js-reveal js-tilt" data-accent="#6366f1">
+            <div class="skill-icon">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                <rect x="2" y="6" width="28" height="20" rx="3" stroke="#6366f1" stroke-width="1.5"/>
+                <path d="M8 13l4 4-4 4M16 21h8" stroke="#6366f1" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="skill-name">SQL & Databases</h3>
+            <p class="skill-desc">Complex queries, window functions, CTEs, query optimisation, PostgreSQL &amp; BigQuery.</p>
+            <div class="skill-tags">
+              <span>PostgreSQL</span><span>BigQuery</span><span>dbt</span>
+            </div>
+          </div>
+
+          <div class="skill-card js-reveal js-tilt" data-accent="#8b5cf6">
+            <div class="skill-icon">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                <rect x="3" y="3" width="11" height="11" rx="2" stroke="#8b5cf6" stroke-width="1.5"/>
+                <rect x="18" y="3" width="11" height="11" rx="2" stroke="#8b5cf6" stroke-width="1.5"/>
+                <rect x="3" y="18" width="11" height="11" rx="2" stroke="#8b5cf6" stroke-width="1.5"/>
+                <path d="M18 23.5h11M23.5 18v11" stroke="#8b5cf6" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="skill-name">Power BI</h3>
+            <p class="skill-desc">End-to-end BI solutions — DAX measures, data modelling, interactive report design &amp; gateway config.</p>
+            <div class="skill-tags">
+              <span>DAX</span><span>Power Query</span><span>Dataflows</span>
+            </div>
+          </div>
+
+          <div class="skill-card js-reveal js-tilt" data-accent="#06b6d4">
+            <div class="skill-icon">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                <path d="M16 4C9.373 4 4 9.373 4 16s5.373 12 12 12 12-5.373 12-12S22.627 4 16 4z" stroke="#06b6d4" stroke-width="1.5"/>
+                <path d="M10 16c0-3.314 2.686-6 6-6" stroke="#06b6d4" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M19 13l-3 3 3 3" stroke="#06b6d4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3 class="skill-name">Python</h3>
+            <p class="skill-desc">Data pipelines, EDA, ML preprocessing, Pandas, NumPy, Matplotlib &amp; automation scripts.</p>
+            <div class="skill-tags">
+              <span>Pandas</span><span>NumPy</span><span>Scikit-learn</span>
+            </div>
+          </div>
+
+          <div class="skill-card js-reveal js-tilt" data-accent="#10b981">
+            <div class="skill-icon">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                <path d="M6 10l6 6-6 6M16 22h10" stroke="#10b981" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3 class="skill-name">Modern Web Stack</h3>
+            <p class="skill-desc">Semantic HTML5, CSS3 animations, Vanilla JS, responsive design, performance &amp; accessibility.</p>
+            <div class="skill-tags">
+              <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+            </div>
+          </div>
+
+          <div class="skill-card js-reveal js-tilt" data-accent="#f59e0b">
+            <div class="skill-icon">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                <path d="M4 24L12 10l6 8 4-5 6 11H4z" stroke="#f59e0b" stroke-width="1.5" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3 class="skill-name">Data Visualisation</h3>
+            <p class="skill-desc">Translating complex datasets into intuitive charts, KPI cards, and executive-ready dashboards.</p>
+            <div class="skill-tags">
+              <span>Tableau</span><span>D3.js</span><span>Looker</span>
+            </div>
+          </div>
+
+          <div class="skill-card js-reveal js-tilt" data-accent="#ec4899">
+            <div class="skill-icon">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                <circle cx="16" cy="16" r="4" stroke="#ec4899" stroke-width="1.5"/>
+                <path d="M16 4v4M16 24v4M4 16h4M24 16h4M7.76 7.76l2.83 2.83M21.41 21.41l2.83 2.83M7.76 24.24l2.83-2.83M21.41 10.59l2.83-2.83" stroke="#ec4899" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="skill-name">Analytics Strategy</h3>
+            <p class="skill-desc">KPI definition, metric trees, A/B test design, stakeholder reporting &amp; data-informed decisions.</p>
+            <div class="skill-tags">
+              <span>A/B Testing</span><span>KPI Design</span><span>Reporting</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ░░ WORK ░░ -->
+    <section class="work section-pad" id="work">
+      <div class="container">
+        <p class="section-eyebrow center js-reveal">Portfolio</p>
+        <h2 class="section-title center js-reveal">Selected Work</h2>
+
+        <div class="work-grid">
+
+          <!-- Card 1 -->
+          <article class="project-card js-reveal">
+            <div class="card-img-wrap">
+              <div class="card-img card-img--ecom" aria-label="Brazilian E-Commerce Analysis project visual"></div>
+              <div class="card-overlay">
+                <a href="#work" class="card-link-btn" aria-label="View project">
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+                    <path d="M3 9h12M9 3l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="card-year">2024</span>
+                <span class="card-category">Data Analysis</span>
+              </div>
+              <h3 class="card-title">Brazilian E-Commerce Analysis</h3>
+              <p class="card-desc">End-to-end pipeline analysing 100K+ Olist orders — uncovering delivery delay patterns, regional revenue clusters, and seller performance metrics.</p>
+              <div class="card-stack">
+                <span>Python</span><span>SQL</span><span>Power BI</span><span>Pandas</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="project-card js-reveal">
+            <div class="card-img-wrap">
+              <div class="card-img card-img--pharma" aria-label="Pharma Risk Dashboard project visual"></div>
+              <div class="card-overlay">
+                <a href="#work" class="card-link-btn" aria-label="View project">
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+                    <path d="M3 9h12M9 3l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="card-year">2024</span>
+                <span class="card-category">BI Dashboard</span>
+              </div>
+              <h3 class="card-title">Pharma Risk Dashboard</h3>
+              <p class="card-desc">Interactive Power BI dashboard tracking clinical trial risk indicators, adverse event rates, and supply-chain bottlenecks for a mid-size pharma client.</p>
+              <div class="card-stack">
+                <span>Power BI</span><span>DAX</span><span>SQL Server</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="project-card js-reveal">
+            <div class="card-img-wrap">
+              <div class="card-img card-img--sales" aria-label="Sales Intelligence Platform project visual"></div>
+              <div class="card-overlay">
+                <a href="#work" class="card-link-btn" aria-label="View project">
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+                    <path d="M3 9h12M9 3l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="card-year">2023</span>
+                <span class="card-category">Web App</span>
+              </div>
+              <h3 class="card-title">Sales Intelligence Platform</h3>
+              <p class="card-desc">A lightweight, zero-dependency web app surfacing real-time sales KPIs from a BigQuery warehouse — built with Vanilla JS and Chart.js.</p>
+              <div class="card-stack">
+                <span>JavaScript</span><span>BigQuery</span><span>CSS3</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="project-card js-reveal">
+            <div class="card-img-wrap">
+              <div class="card-img card-img--churn" aria-label="Customer Churn Model project visual"></div>
+              <div class="card-overlay">
+                <a href="#work" class="card-link-btn" aria-label="View project">
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+                    <path d="M3 9h12M9 3l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="card-year">2023</span>
+                <span class="card-category">ML · Analytics</span>
+              </div>
+              <h3 class="card-title">Customer Churn Predictor</h3>
+              <p class="card-desc">Logistic regression + feature engineering pipeline predicting telecom churn with 87% accuracy — deployed as an internal Streamlit tool for the CX team.</p>
+              <div class="card-stack">
+                <span>Python</span><span>Scikit-learn</span><span>Streamlit</span>
+              </div>
+            </div>
+          </article>
+
+        </div><!-- /work-grid -->
+      </div>
+    </section>
+
+    <!-- ░░ CONTACT ░░ -->
+    <section class="contact section-pad" id="contact">
+      <div class="container">
+        <div class="contact-inner">
+          <div class="contact-text">
+            <p class="section-eyebrow js-reveal">Contact</p>
+            <h2 class="section-title js-reveal">Let's build something<br><em>together</em>.</h2>
+            <p class="body-text js-reveal">Whether you have a data challenge, a dashboard in mind, or a frontend project to ship — I'm ready to talk.</p>
+            <ul class="contact-links js-reveal">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="1" y="3" width="14" height="10" rx="2" stroke="#6366f1" stroke-width="1.2"/><path d="M1 5l7 5 7-5" stroke="#6366f1" stroke-width="1.2"/></svg>
+                <a href="mailto:hello@mns.dev">hello@mns.dev</a>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 1.5A6.5 6.5 0 108 14.5 6.5 6.5 0 008 1.5z" stroke="#6366f1" stroke-width="1.2"/><path d="M5.5 8a2.5 2.5 0 005 0 2.5 2.5 0 00-5 0z" stroke="#6366f1" stroke-width="1.2"/><path d="M10.5 5.5L14 2M10.5 5.5H13M10.5 5.5V3" stroke="#6366f1" stroke-width="1.2" stroke-linecap="round"/></svg>
+                <a href="#contact">linkedin.com/in/mns</a>
+              </li>
+            </ul>
+          </div>
+
+          <form class="contact-form js-reveal" id="contactForm" novalidate>
+            <div class="form-field">
+              <input type="text" id="name" name="name" required autocomplete="name" placeholder=" " />
+              <label for="name">Your Name</label>
+              <span class="field-line"></span>
+            </div>
+            <div class="form-field">
+              <input type="email" id="email" name="email" required autocomplete="email" placeholder=" " />
+              <label for="email">Email Address</label>
+              <span class="field-line"></span>
+            </div>
+            <div class="form-field">
+              <select id="topic" name="topic" required>
+                <option value="" disabled selected></option>
+                <option value="data">Data Analytics Project</option>
+                <option value="dashboard">Dashboard / BI</option>
+                <option value="frontend">Frontend Development</option>
+                <option value="other">Other</option>
+              </select>
+              <label for="topic" class="select-label">Topic</label>
+              <span class="field-line"></span>
+            </div>
+            <div class="form-field">
+              <textarea id="message" name="message" rows="4" required placeholder=" "></textarea>
+              <label for="message">Message</label>
+              <span class="field-line"></span>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--submit" id="submitBtn">
+              <span class="btn-text">Send Message</span>
+              <span class="btn-success" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3 9l4 4 8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Sent!
+              </span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ░░ FOOTER ░░ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="logo-mark">MNS</span>
+      <p class="footer-copy">© 2025 MNS. Designed &amp; built with precision.</p>
+      <div class="footer-socials">
+        <a href="#" aria-label="GitHub">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+        </a>
+        <a href="#" aria-label="LinkedIn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="port.js"></script>
+</body>
+</html>
